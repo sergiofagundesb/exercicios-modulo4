@@ -12,3 +12,21 @@ function handleMouseMove(event) {
 const obj = { first: 'Jane', last: 'Doe' };
 var {first,last} = obj;
 console.log(first);
+
+//A partir do objeto abaixo, instancie uma variavel que receba ​name​ e outra para colors
+company = {
+    name: 'ACME Corp',
+    address: 'Nowhere st',
+    products: {
+      shirts: {
+        colors: ['red', 'green', 'blue'],
+      },
+      socks: {
+        colors: ['cyan', 'magenta', 'yellow'],
+      },
+    },
+  };
+var {name: nomeProduto} = company;
+console.log(nomeProduto);
+const {products: {shirts :{colors}}} = company
+console.log(colors);
