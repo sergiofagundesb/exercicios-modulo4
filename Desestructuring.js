@@ -30,3 +30,13 @@ var {name: nomeProduto} = company;
 console.log(nomeProduto);
 const {products: {shirts :{colors}}} = company
 console.log(colors);
+
+//Rest & Spread
+//==============================================================[Resultado]====================================
+//Utilizando um operador clone o objeto c​lothes
+const clothes = {
+    pants: { colors: ['black', 'blue'] },
+    shirts: { colors: ['white', 'red'] },
+    socks: { colors: ['beige', 'gray'] },
+  };
+  let objClone = { ...clothes };
